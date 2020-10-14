@@ -2,10 +2,102 @@
  * YOUR CODE HERE *
  ******************/
 
+const addAll = function(num) {
+  let total = 0;
 
+  for(const sum of num) {
+    total += sum;
+  }
+return total;
+}
 
+const countSpaces = function(str) {
+  let totalSpaces= 0;
 
+  for(const space of str) {
+    if(space === ' ') {
+      totalSpaces = totalSpaces + 1;
+    }
+  }
+return totalSpaces;
+}
 
+const countTrues = function(arr) {
+  let totalTrue = 0;
+
+  for(const index of arr) {
+    if(index === true) {
+      totalTrue++;
+    }
+  }
+  return totalTrue;
+}
+
+const makeFriendly = function(str) {
+ let sentence = '';
+
+  for(const letter of str) {
+    if(letter === '.') {
+      sentence = sentence + '!';
+    } else {
+      sentence = sentence + letter;
+    }
+  }
+  return sentence;
+}
+
+const cubeAll = function(arr) {
+  result = [];
+
+  for(const index of arr) {
+    result.push(index * index * index);
+  }
+  return result;
+}
+
+const addNoises = function(animals) {
+  result = [];
+  
+  for(const noise of animals) {
+    if(noise === 'Fido') {
+      result.push(`Fido says "Woof!"`);
+    } else if(noise === 'Garfield') {
+      result.push("Garfield says \"Meow!\"");
+    } else if(noise === 'Sharp Tooth') {
+      result.push("Sharp Tooth says \"ROWR.\"");
+    } else if(noise === 'Heathcliff') {
+      result.push("Heathcliff says \"Meow!\"");
+    } else if(noise === 'Rolph') {
+      result.push("Rolph says \"Woof!\"");
+    } else if(noise === 'Maisie') {
+      result.push("Maisie says \"Woof!\"");
+    } else if(noise === 'Barnie') {
+      result.push("Barnie says \"ROWR.\"");
+    }
+  }
+return result;
+}
+
+const womenOnly = function(str) {
+  const onlyWomen = [];
+
+  for(const char of str) {
+    if(char.endsWith('F'))
+      onlyWomen.push(char);
+  }
+  return onlyWomen;
+}
+
+const integersOnly = function(array) {
+  const integers = [];
+
+  for(const num of array) {
+    if(num % 1 == 0) {
+      integers.push(num);
+    }
+  }
+  return integers;
+}
 
 
 /*********************************
